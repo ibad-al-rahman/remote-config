@@ -1,0 +1,16 @@
+{
+  "featureFlags": {
+    "ff_apple_adhkar_screen": {
+      "type": "release",
+      "enabled": false,
+      "description": "",
+      "targeting": null
+    },
+    "ff_apple_events_screen": {
+      "type": "release",
+      "enabled": false,
+      "description": "",
+      "targeting": null
+    }
+  }
+}
