@@ -8,7 +8,7 @@
     },
     "ff_apple_events_screen": {
       "type": "release",
-      "enabled": false,
+      "enabled": true,
       "description": "",
       "targeting": null
     }
