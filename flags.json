@@ -8,9 +8,46 @@
     },
     "ff_apple_events_screen": {
       "type": "release",
-      "enabled": true,
+      "enabled": false,
       "description": "",
       "targeting": null
+    },
+    "ff_mobile_forceUpdate": {
+      "type": "kill_switch",
+      "enabled": true,
+      "description": "",
+      "targeting": {
+        "$or": [
+          {
+            "$and": [
+              {
+                "contextField": "appName",
+                "operation": "STR_EQ",
+                "value": "ios-public-sector"
+              },
+              {
+                "contextField": "appVersion",
+                "operation": "SEMVER_LTE",
+                "value": "26.02.02"
+              }
+            ]
+          },
+          {
+            "$and": [
+              {
+                "contextField": "appName",
+                "operation": "STR_EQ",
+                "value": "android-public-sector"
+              },
+              {
+                "contextField": "appVersion",
+                "operation": "SEMVER_LTE",
+                "value": "26.02.02"
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }
